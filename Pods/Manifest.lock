@@ -1,0 +1,20 @@
+PODS:
+  - OverlayContainer (3.5.1)
+  - SkeletonView (1.13.0)
+
+DEPENDENCIES:
+  - OverlayContainer
+  - SkeletonView
+
+SPEC REPOS:
+  trunk:
+    - OverlayContainer
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  OverlayContainer: a95f0f555fd0dd1addba3fc45370801e5fc16e68
+  SkeletonView: 2b14cb767a7da384d17d5d7e1db0d55a6cf9566a
+
+PODFILE CHECKSUM: e616829edcc0d8c180b4e487d7c8ebe57b4b6b19
+
+COCOAPODS: 1.10.1

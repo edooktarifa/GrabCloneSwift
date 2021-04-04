@@ -1,0 +1,6 @@
+framework module Pods_OverlayContainerExample_OverlayContainerExampleUITests {
+  umbrella header "Pods-OverlayContainerExample-OverlayContainerExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

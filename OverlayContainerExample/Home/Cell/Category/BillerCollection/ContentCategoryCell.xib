@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ContentCategoryCell" customModule="OverlayContainerExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="265" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pulsa" translatesAutoresizingMaskIntoConstraints="NO" id="OfD-6Q-7JA">
+                        <rect key="frame" x="111.5" y="0.0" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OfD-6Q-7JA" secondAttribute="height" multiplier="1:1" id="bw9-YP-ygi"/>
+                            <constraint firstAttribute="height" constant="42" id="v5U-Wd-ugK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pulsa &amp; Data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgN-jh-HuY">
+                        <rect key="frame" x="0.0" y="42" width="265" height="58"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="OfD-6Q-7JA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3wB-qs-c8M"/>
+                <constraint firstAttribute="trailing" secondItem="AgN-jh-HuY" secondAttribute="trailing" id="55f-at-6Eb"/>
+                <constraint firstAttribute="bottom" secondItem="AgN-jh-HuY" secondAttribute="bottom" constant="5" id="c2C-N6-Jib"/>
+                <constraint firstItem="AgN-jh-HuY" firstAttribute="centerX" secondItem="OfD-6Q-7JA" secondAttribute="centerX" id="d9l-nP-jWW"/>
+                <constraint firstItem="AgN-jh-HuY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eaZ-9v-Jgd"/>
+                <constraint firstItem="AgN-jh-HuY" firstAttribute="top" secondItem="OfD-6Q-7JA" secondAttribute="bottom" id="h2V-ZI-XFm"/>
+                <constraint firstItem="OfD-6Q-7JA" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ihq-JR-MHs"/>
+            </constraints>
+            <size key="customSize" width="265" height="105"/>
+            <connections>
+                <outlet property="billerImg" destination="OfD-6Q-7JA" id="Ll8-S6-nkK"/>
+                <outlet property="billerLbl" destination="AgN-jh-HuY" id="MnI-Vy-ESV"/>
+            </connections>
+            <point key="canvasLocation" x="293.47826086956525" y="110.15625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pulsa" width="86" height="86"/>
+    </resources>
+</document>
